@@ -34,7 +34,7 @@ import initMobileSidebar from "@/scripts/MobileSidebar";
 // Google 广告
 import GoogleAdInit from "@/scripts/GoogleAd";
 // Han Analytics 统计
-import HanAnalyticsInit from "@/scripts/Analytics";
+import AnalyticsInit from "@/scripts/Analytics";
 //  谷歌 SEO 推送
 import SeoPushInit from "@/scripts/SeoPush";
 // SmoothScroll 滚动优化
