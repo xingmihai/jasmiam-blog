@@ -1,31 +1,20 @@
 ---
 title: "关于"
 h1: "关于我"
-desc: "Hi there, I’m Han 👋"
+desc: "Hi there, I’m JASMIAM 👋"
 layout: "@/layouts/PageLayout/PageLayout.astro"
 type: "about"
 ---
 
 :::note{type="success"}
-我是韩小韩，一位对技术充满热情、涉猎广泛的探索者，同时也是一名热衷于探索前沿技术的实践者。
+我是静谧幻想家，一位对技术充满热情、涉猎广泛的探索者，同时也是一名热衷于探索前沿技术的实践者。
 
 我始终保持对新技术的热情，并将我的知识与经验分享在我的博客中。
 
-我的技术兴趣广泛，涵盖前端工程、云计算、自托管服务、AI 应用以及网络架构优化。我始终相信，优秀的技术人不仅要有深度，更要有广度，因此我不断学习新知识，并将其转化为实际解决方案。
+我的技术兴趣广泛。我始终相信，优秀的技术人不仅要有深度，更要有广度，因此我不断学习新知识，并将其转化为实际解决方案。
 
 我期待在这里与你分享我的见解、经验和最新的技术动态。
 :::
-
-
-**在 Web 开发方面**，我深耕 Vue.js 生态，并且关注了现代 CSS 框架如 Tailwind CSS。同时，对前端构建工具如 Webpack、Rollup 和 Vite 以及代码质量和规范工具如 ESLint 进行了研究，我还关注了前端性能优化，例如代码分割、资源加载策略以及 Astro、Hexo 等现代网站构建工具的使用。
-
-**在后端开发和云计算领域**，我对 Node.js 生态系统非常熟悉，并积极探索 Serverless 架构。我长期使用 Cloudflare Workers、Vercel 和腾讯云 EdgeOne 等平台，优化边缘计算、KV 存储和全球 CDN 加速方案，确保应用的高可用性和低延迟。
-
-**在自托管（Homelab）和个人服务器管理方面**，我对个人服务器运维充满热情，搭建了基于 Jellyfin 的媒体中心、Home Assistant 智能家居系统，并利用 OpenWrt 优化家庭网络。在 Linux 系统管理、Docker 容器化部署和自动化脚本方面积累了丰富经验。
-
-**在人工智能与大型语言模型（LLMs）领域**，我密切关注 AI 领域的发展，尤其是 DeepSeek、Gemini 和 Claude 等大模型的应用。我尝试将 AI 能力整合到开发流程中，例如自动化文档生成、代码优化辅助，并且对 AI SDK 和相关工具保持关注。
-
-**在网络与 DevOps 方面**，我熟悉 DNS 解析、CDN 加速、SSL 证书管理，并研究 TCP/IP、HTTP/3 等协议优化。我实践 Git 工作流、CI/CD 自动化（GitHub Actions / Cloudflare Pages），并利用 Docker 实现开发环境标准化。
 
 **🚀 技术理念**
 
@@ -36,9 +25,7 @@ type: "about"
 **🎯 未来方向**
 未来，我计划进一步探索：
 
-- **边缘计算与全球化部署**，优化分布式应用的性能。
-- **AI 增强开发**，探索 LLM 在代码生成、调试和文档管理中的应用。
-- **智能家居与自动化**，结合 Home Assistant 打造更高效的家庭 lab。
+- **不行了，我吹不下去了😝**
 
 ## Languages and Tools
 
@@ -66,15 +53,13 @@ type: "about"
 
 |     主&emsp;页      |       <https://www.4ce.cn>        |
 | :-----------------: | :-------------------------------: |
-|   **博&emsp;客**    |    **<https://www.vvhan.com>**    |
-|  **Web&emsp;API**   |    **<https://api.vvhan.com>**    |
-|  **Han Analytics**  | **<https://analytics.vvhan.com>** |
-| **Cloudflare 优选** |    **<https://cf.vvhan.com>**     |
+|   **博&emsp;客**    |    **<https://jasmiam.top>**    |
+|  **JASMIAM Analytics**  | **<https://analytics.jasmiam.top>** |
 
 ## 联系我
 
 ```js
-const Han = class {
+const JASMIAM = class {
 	constructor() {
 		const Hello = [123, 34, 110, 97, 109, 101, 34, 58, 34, 72, 97, 110, 34, 44, 34, 101, 109, 97, 105, 108, 34, 58, 34, 49, 54];
 		const EveryOne = [53, 53, 52, 54, 54, 51, 56, 55, 64, 113, 113, 46, 99, 111, 109, 34, 44, 34, 81, 81, 34, 58, 49, 54, 53, 53];
@@ -85,7 +70,7 @@ const Han = class {
 		console.log(AboutMe);
 	}
 };
-new Han();
+new JASMIAM();
 ```
 
 <style>.enfj-dom{margin:1rem 0;position:relative;box-sizing:border-box;padding:1rem 2rem;display:flex;justify-content:space-between;width:100%;height:16rem;background:#fff;border:1px solid #e3e8f7;border-radius:12px;box-shadow:0 8px 16px -4px #2c2d300c;overflow:hidden;background:url("/assets/images/enfj.webp") no-repeat;background-size:8.8rem auto;background-position:right 2rem;transition:all .36s}.enfj-dom:hover{background-position:right 1.6rem}.enfj-dom>.text{display:flex;flex-direction:column;width:100%}.enfj-dom>.text>em,.enfj-dom>.text>span{padding:0;margin:0;font-size:2rem;cursor:default;line-height:2.6rem;font-style:normal}.enfj-dom>.text>span{font-weight:bold;color:#33a474}.enfj-dom>.text>a.more-enfj{margin-top:auto;color:#999 !important;font-size:.88rem !important;text-decoration:none !important}</style>
