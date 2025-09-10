@@ -17,7 +17,7 @@ import swup from '@swup/astro';
 // https://astro.build/config
 export default defineConfig({
 	site: SITE_INFO.Site,
-	build: { assets: 'vh_static' },
+	build: { assets: 'ji_static' },
 	integrations: [swup({
 		theme: false,
 		animationClass: "vh-animation-",
