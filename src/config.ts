@@ -2,7 +2,7 @@ export default {
   // 网站标题
   Title: '静谧幻想家的博客',
   // 网站地址
-  Site: 'https://jasmiam..top/',
+  Site: 'https://jasmiam.top/',
   // 网站副标题
   Subtitle: '一起慢慢进步.',
   // 网站描述
