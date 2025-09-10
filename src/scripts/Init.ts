@@ -78,7 +78,7 @@ const indexInit = async (only: boolean = true) => {
   // 文章评论初始化
   checkComment() && commentInit(checkComment(), commentLIst)
   // Han Analytics 统计
-  HanAnalyticsInit();
+  AnalyticsInit();
   // 打字效果
   only && TypeWriteInit();
   // 泡泡🫧效果
