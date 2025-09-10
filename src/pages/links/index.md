@@ -13,8 +13,8 @@ type: "links"
 :::
 
 ```yaml
-name: 韩小韩博客
-link: https://www.vvhan.com/
-avatar: https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640
-desc: 运气是计划之外的东西.
+name: JASMIAM博客
+link: https://jasmiam.top/
+avatar: https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=640
+desc: 除了死亡，一切失败都只存在于心理层面.
 ```
