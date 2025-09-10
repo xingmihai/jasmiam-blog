@@ -54,7 +54,7 @@ type: "about"
 |     主&emsp;页      |       <https://page.jasmiam.top>        |
 | :-----------------: | :-------------------------------: |
 |   **博&emsp;客**    |    **<https://jasmiam.top>**    |
-|  **JASMIAM Analytics**  | **<https://analytics.jasmiam.top>** |
+|  **Analytics**  | **<https://analytics.jasmiam.top>** |
 
 ## 联系我
 
