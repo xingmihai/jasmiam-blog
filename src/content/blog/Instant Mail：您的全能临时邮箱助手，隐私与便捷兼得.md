@@ -8,11 +8,8 @@ id: Instant Mail
 date: 2025-09-11 06:37:00
 cover: "https://wp-cdn.4ce.cn/v2/zsdjAvc.png"
 recommend: true
-top: false # 是否置顶文章
-hide: false # 是否隐藏文章
-<!-- 页面独有 -->
-type: "links" # 页面类型
-comment: false # 关闭页面评论（默认开启）
+top: false
+hide: false
 ---
 
 :::note{type="error"}
