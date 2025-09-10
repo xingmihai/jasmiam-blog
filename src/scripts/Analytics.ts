@@ -4,6 +4,6 @@ import SITE_INFO from "@/config";
 import { LoadScript } from "@/utils/index";
 
 export default async () => {
-  const { HanAnalytics } = SITE_INFO;
-  HanAnalytics.enable && LoadScript(`${HanAnalytics.server}/tracker.min.js`, [{ k: "data-website-id", v: HanAnalytics.siteId }]);
+  const { Analytics } = SITE_INFO;
+  Analytics.enable && LoadScript(`${Analytics.server}/tracker.min.js`, [{ k: "data-website-id", v: Analytics.siteId }]);
 }
