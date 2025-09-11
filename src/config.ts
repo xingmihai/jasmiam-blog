@@ -64,6 +64,7 @@ export default {
     { text: 'Github', link: 'https://github.com/1498934815', icon: 'WebSite_github' },
     { text: '骤雨重山图床', link: 'https://img.jasmiam.top', icon: 'WebSite_img' },
     { text: 'Analytics', link: 'https://analytics.jasmiam.top', icon: 'WebSite_analytics' },
+{ text: 'MT论坛', link: 'https://bbs.binmt.cc/home.php?mod=space&uid=147108&do=profile', icon: 'WebSite_mt' },
   ],
   // 侧边栏展示
   AsideShow: {
