@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    user-select: none;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: #000;
+}
+
+#gameInfo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 0 5px #000;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+#bossTimer, #lifeRegenTimer, #attackSpeedInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 0 5px #000;
+    z-index: 10;
+}
+
+#lifeRegenTimer {
+    top: 40px;
+}
+
+#attackSpeedInfo {
+    top: 70px;
+}
+
+#multiBulletIndicator {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    color: #f1c40f;
+    font-size: 16px;
+    text-shadow: 0 0 5px #000;
+    z-index: 10;
+}
+
+#bossHealthBar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+}
+
+#bossHealthFill {
+    height: 100%;
+    width: 100%;
+    background-color: #e74c3c;
+    transition: width 0.3s;
+}
+
+#bossHealthFill.low-health {
+    background-color: #f1c40f;
+}
+
+#bossName {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+    display: none;
+    z-index: 10;
+}
+
+#bossWarning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e74c3c;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    display: none;
+    z-index: 15;
+    animation: pulse 0.5s infinite alternate;
+}
+
+#levelUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2ecc71;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    display: none;
+    z-index: 15;
+}
+
+.level-up {
+    animation: pulse 0.5s infinite alternate;
+}
+
+.multi-bullet-indicator {
+    color: #f1c40f;
+}
+
+#bossRedFlash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 76, 60, 0.3);
+    display: none;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.boss-red-flash {
+    animation: redFlash 0.1s infinite alternate;
+}
+
+#controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+#joystickArea {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    touch-action: none;
+}
+
+#joystickBase {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#joystickHandle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+
+#fireArea {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    touch-action: none;
+}
+
+#fireButton {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(241, 196, 15, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0 0 5px #000;
+}
+
+#fireButton:active {
+    background-color: rgba(241, 196, 15, 0.6);
+}
+
+.skill-bar {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+.skill-button {
+    width: 80px;
+    height: 80px;
+    border: 3px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-active-indicator {
+    display: none;
+    font-size: 12px;
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.skill-cooldown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#startScreen, #gameOverScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 20;
+}
+
+#gameOverScreen {
+    display: none;
+}
+
+#startScreen h1, #gameOverScreen h1 {
+    color: #3498db;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+}
+
+.instructions {
+    max-width: 80%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.instruction-item {
+    margin: 10px 0;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+.settings-option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.settings-label {
+    font-size: 16px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7f8c8d;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2ecc71;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+#startButton, #restartButton {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover, #restartButton:hover {
+    background-color: #2980b9;
+}
+
+.achievement-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    display: none;
+    z-index: 15;
+}
+
+.achievement-title {
+    color: #f1c40f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.achievement-desc {
+    color: white;
+    font-size: 16px;
+}
+
+.damage-popup {
+    position: absolute;
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+    animation: floatUp 1s forwards;
+    pointer-events: none;
+    z-index: 15;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@keyframes redFlash {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.6; }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translate(-50%, -50%); }
+    100% { opacity: 0; transform: translate(-50%, -100%); }
+}
