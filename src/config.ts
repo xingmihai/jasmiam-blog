@@ -66,8 +66,8 @@ export default {
     { text: 'Analytics', link: 'https://analytics.jasmiam.top', icon: 'WebSite_analytics' },
     { text: 'MT论坛', link: 'https://bbs.binmt.cc/home.php?mod=space&uid=147108&do=profile', icon: 'WebSite_mt' },
     { text: '微信', link: 'https://img.jasmiam.top/v2/ROIwNPT.png', icon: 'WebSite_wechat' },
-    { text: 'QQ', link: 'https://github.com/1498934815', icon: 'WebSite_github' },
-    { text: 'QQ', link: 'mqqopensdkapi://bizAgent/qm/qr?url=https%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DtYrhpSkPVMGRrU_u6RBUcYwsXQAxh_b_%26jump_from%3D%26auth%3D%26app_name%3D%26authSig%3D%26source_id%3D3_40001', icon: 'WebStie_qq' },
+    { text: 'QQ', link: 'mqqopensdkapi://bizAgent/qm/qr?url=https%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DtYrhpSkPVMGRrU_u6RBUcYwsXQAxh_b_%26jump_from%3D%26auth%3D%26app_name%3D%26authSig%3D%26source_id%3D3_40001', icon: 'WebSite_qq' },
+    { text: 'QQ', link: 'mqqopensdkapi://bizAgent/qm/qr?url=WebStie_bilibili', icon: 'WebStie_bilibili' },
   ],
   // 侧边栏展示
   AsideShow: {
