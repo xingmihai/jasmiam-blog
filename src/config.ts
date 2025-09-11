@@ -66,7 +66,7 @@ export default {
     { text: 'Analytics', link: 'https://analytics.jasmiam.top', icon: 'WebSite_analytics' },
     { text: 'MT论坛', link: 'https://bbs.binmt.cc/home.php?mod=space&uid=147108&do=profile', icon: 'WebSite_mt' },
     { text: '微信', link: 'https://img.jasmiam.top/v2/ROIwNPT.png', icon: 'WebSite_wechat' },
-    { text: 'bilibili', link: 'https://b23.tv/EscDwn5', icon: 'WebSite_bilibili' },
+    { text: 'bilibili', link: 'https://b23.tv/EscDwn5', icon: 'WebStie_bilibili' },
   ],
   // 侧边栏展示
   AsideShow: {
