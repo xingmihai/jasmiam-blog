@@ -1,3 +1,7 @@
 # 对图片、字体等静态资源设置长期缓存
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# 确保 HTML 文件始终是最新的（不要缓存）
+/*
+  Cache-Control: public, max-age=0, must-revalidate
