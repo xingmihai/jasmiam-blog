@@ -11,6 +11,7 @@ recommend: true
 
 ::btn[👉 立即体验]{link="https://jasmiam.top/Spaceshooting" type="success"}
 ::btn[👉 下载源码]{link="https://save.jasmiam.top/太空射击游戏.zip" type="success"}
+
 分享一个项目——「`太空射击游戏`」
 ## 🛠 给开发者的建议
 这个项目是一个很好的前端学习样本，涵盖了：
