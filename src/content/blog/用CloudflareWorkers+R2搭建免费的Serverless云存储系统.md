@@ -17,7 +17,7 @@ recommend: true
 
 ## 视频预览
 
-::vhVideo{url="http://save.jasmiam.top/Screenrecorder-2025-09-14-07-31-48-97.mp4"}
+::vhVideo{url="https://raw.githubusercontent.com/1498934815/m3u8/HEAD/Screenrecorder-2025-09-14-07-31-48-97/output.m3u8"}
 
 ---
 
