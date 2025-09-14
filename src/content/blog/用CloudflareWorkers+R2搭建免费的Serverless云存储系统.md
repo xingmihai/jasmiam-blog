@@ -13,6 +13,7 @@ recommend: true
 :::note{type="error"}
 源码在 `最下面`
 :::
+[点我查看效果](http://save.jasmiam.top/Screenrecorder-2025-09-14-07-31-48-97.mp4)
 
 ## ☁️ Cloudflare Workers 云存储文件管理器
 
