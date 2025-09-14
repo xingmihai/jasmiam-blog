@@ -10,6 +10,10 @@ date: 2025-09-14 07:47:00
 recommend: true
 ---
 
+:::note{type="error"}
+源码在 `最下面`
+:::
+
 ## ☁️ Cloudflare Workers 云存储文件管理器
 
 一个基于 **Cloudflare Workers + R2 对象存储** 的轻量级、无服务器、支持登录验证的在线文件管理工具。
