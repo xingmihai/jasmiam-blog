@@ -95,7 +95,7 @@ export default {
     // Twikoo 评论
     Twikoo: {
       enable: true,
-      envId: 'https://comment.jasmiam.top'
+      envId: 'https://my-twikoo-one-alpha.vercel.app'
     },
     // Waline 评论
     Waline: {
