@@ -12,7 +12,7 @@ declare const twikoo: any;
 
 // Twikoo 评论
 const TwikooFn = async (commentDOM: string) => {
-  document.querySelector(commentDOM)!.innerHTML = '<section class="vh-space-loading"><span></span><span></span><span></span></section>'
+  document.querySelector(commentDOM)!.innerHTML = '<section class="ji-space-loading"><span></span><span></span><span></span></section>'
   await LoadScript("https://registry.npmmirror.com/twikoo/1.6.41/files/dist/twikoo.all.min.js");
   twikoo.init({ envId: SITE_INFO.Comment.Twikoo.envId, el: commentDOM, onCommentLoaded: () => setTimeout(() => document.querySelectorAll('.ji-comment a[href="#"]').forEach(link => link.removeAttribute('href'))) })
 }
