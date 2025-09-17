@@ -95,7 +95,7 @@ export default {
     // Twikoo 评论
     Twikoo: {
       enable: true,
-      envId: 'https://twikoo-cloudflare'
+      envId: 'https://comment.jasmiam.top'
     },
     // Waline 评论
     Waline: {
