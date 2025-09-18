@@ -94,7 +94,7 @@ export default {
   Comment: {
     // Twikoo 评论
     Twikoo: {
-      enable: true,
+      enable: false,
       envId: ''
 //https://jasmiam.netlify.app
     },
