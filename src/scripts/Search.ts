@@ -2,7 +2,7 @@ import { $GET } from '@/utils/index'
 
 // 更新数据
 let searchJson: any[] = [];
-const getSearchJson = async () => (searchJson = await $GET('/ji-search.json'))
+const getSearchJson = async () => (searchJson = await $GET('/vh-search.json'))
 
 // 搜索
 const searchFn = async (value: string) => {
