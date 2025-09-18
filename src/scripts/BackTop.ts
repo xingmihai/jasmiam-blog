@@ -19,17 +19,17 @@ const backTopFn = () => {
 };
 // 页面更新，初始化函数======
 // 回顶部DOM
-let backTop: any = document.querySelector(".ji-back-top");
+let backTop: any = document.querySelector(".vh-back-top");
 // 彩虹圈圈 DOM
-let circle: any = document.querySelector(".ji-back-top>svg>circle");
+let circle: any = document.querySelector(".vh-back-top>svg>circle");
 const circumference = 2 * Math.PI * 10;
 
 //  初始化
 export default () => {
   // 更新 彩虹圈圈 DOM
-  circle = document.querySelector(".ji-back-top>svg>circle");
+  circle = document.querySelector(".vh-back-top>svg>circle");
   // 更新 回顶部DOM
-  backTop = document.querySelector(".ji-back-top");
+  backTop = document.querySelector(".vh-back-top");
   // BackTop 圈圈初始化
   circle.style.strokeDasharray = circumference;
   circle.style.strokeDashoffset = circumference;
