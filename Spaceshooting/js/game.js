@@ -564,7 +564,7 @@ function checkLevelUp() {
         
         nextLevelScore = Math.floor(nextLevelScore * multiplier);
         
-        fireRate = Math.max(100, fireRate - 20);
+        fireRate = Math.max(20, fireRate - 20);
         fireRateElement.textContent = fireRate;
         
         if (level % 3 === 0 && bulletLines < 5) {
