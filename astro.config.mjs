@@ -20,8 +20,8 @@ export default defineConfig({
 	build: { assets: 'vh_static' },
 	integrations: [swup({
 		theme: false,
-		animationClass: "ji-animation-",
-		containers: [".main-inner>.main-inner-content",'.ji-header>.main'],
+		animationClass: "vh-animation-",
+		containers: [".main-inner>.main-inner-content",'.vh-header>.main'],
 		smoothScrolling: true,
 		progress: true,
 		cache: true,
