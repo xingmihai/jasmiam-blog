@@ -38,15 +38,15 @@ export default {
   Theme: {
     // 颜色请用 16 进制颜色码
     // 主题颜色
-    "--ji-main-color": "#01C4B6",
+    "--vh-main-color": "#01C4B6",
     // 字体颜色
-    "--ji-font-color": "#34495e",
+    "--vh-font-color": "#34495e",
     // 侧边栏宽度
-    "--ji-aside-width": "318px",
+    "--vh-aside-width": "318px",
     // 全局圆角
-    "--ji-main-radius": "0.88rem",
+    "--vh-main-radius": "0.88rem",
     // 主体内容宽度
-    "--ji-main-max-width": "1458px",
+    "--vh-main-max-width": "1458px",
   },
   // 导航栏 (新窗口打开 newWindow: true)
   Navs: [
