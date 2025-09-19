@@ -102,7 +102,7 @@ export default {
     // Waline 评论
     Waline: {
       enable: true,
-      serverURL: 'https://jasmiamwaline.netlify.app/.netlify/functions/comment'
+      serverURL: 'https://waline.jasmiam.top/.netlify/functions/comment'
     }
   },
   // Han Analytics 统计（https://github.com/uxiaohan/HanAnalytics）
