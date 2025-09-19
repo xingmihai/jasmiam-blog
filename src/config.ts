@@ -84,6 +84,7 @@ export default {
   },
   // DNS预解析地址
   DNSOptimization: [
+    'https://registry.npmmirror.com',
     'https://i0.wp.com',
     'https://cn.cravatar.com',
     'https://analytics.jasmiam.top',
