@@ -14,7 +14,7 @@ hide: false
 
 ::btn[下载链接]{link="https://save.jasmiam.top/InstantMail_JASMIAM.apk" type="error"}
 
-::btn[最新版版下载链接]{link="https://appurl.io/Ww48gjBKdo"}
+::btn[官方下载链接]{link="https://appurl.io/Ww48gjBKdo"}
 
 :::note
 在日常网络生活中，我们常常遇到需要邮箱注册却又不想暴露个人真实邮箱的场景，例如注册短期使用的服务、下载一次性资料或避免垃圾邮件骚扰。Instant Mail 正是一款为解决此痛点而生的强大工具，它为您提供安全、免费、即用即弃的临时电子邮件地址，全方位守护您的隐私和便捷。
