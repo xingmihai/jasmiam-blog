@@ -88,7 +88,7 @@ export default {
     'https://i0.wp.com',
     'https://cn.cravatar.com',
     'https://analytics.jasmiam.top',
-    'https://registry.npmmirror.com',
+    'https://registry.npmmirror.com/@waline/emojis/1.3.0/files',
     'https://pagead2.googlesyndication.com'
   ],
   // 博客音乐组件解析接口
