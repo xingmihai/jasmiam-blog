@@ -29,12 +29,14 @@ export default async () => {
     // 渲染HTML
     linksDOM.innerHTML = shuffledRes.map((item: any) => `
       <a href="${item.link}" target="_blank">
+        <!-- 确保 avatar 字段存在且路径正确 -->
         
         <section class="link-info">
           <span>${item.name}</span>
           <p class="vh-ellipsis line-2">${item.descr}</p>
         </section>
-    </a>`).join('');
+      </a>
+    `).join('');
     
     // 初始化懒加载
     vhLzImgInit();
