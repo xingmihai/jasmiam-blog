@@ -1,38 +1,41 @@
 import vh from 'vh-plugin'
 import { $GET } from '@/utils/index'
-// 图片懒加载
 import vhLzImgInit from "@/scripts/vhLazyImg";
 
-/**
- * Fisher-Yates 洗牌算法 —— 打乱数组顺序（均匀随机）
- * @param array 要打乱顺序的数组
- * @returns 打乱后的新数组（不修改原数组）
- */
+// ✅ Fisher-Yates 洗牌算法
 function shuffleArray<T>(array: T[]): T[] {
-  const shuffled = [...array]; // 拷贝一份，不修改原数组
+  const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1)); // 0 <= j <= i
-    // 交换 i 和 j 位置的元素
+    const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
 }
 
-// 渲染友情链接
+// 渲染函数
 const LinksInit = async (data: any) => {
   const linksDOM = document.querySelector('.main-inner-content>.vh-tools-main>main.links-main')
-  if (!linksDOM) return;
+  if (!linksDOM) {
+    console.error('❌ 未找到友链容器');
+    return;
+  }
 
   try {
     let res = data;
+
+    // 如果传入的是字符串，说明是 API 地址，尝试请求
     if (typeof data === 'string') {
+      console.log('🔁 尝试通过 API 获取数据:', data);
       res = await $GET(data);
     }
 
-    // 🔒 使用 Fisher-Yates 算法对友情链接数据进行随机排序
+    // 打印查看数据是否正常
+    console.log('📦 原始友链数据：', res);
+
+    // ✅ 关键：使用 Fisher-Yates 洗牌算法打乱数组
     const shuffledRes = shuffleArray(res);
 
-    // 渲染随机排序后的链接
+    // 渲染
     linksDOM.innerHTML = shuffledRes.map((i: any) => `
       <a href="${i.link}" target="_blank">
         <img class="avatar" src="${i.avatar}" />
@@ -43,14 +46,10 @@ const LinksInit = async (data: any) => {
       </a>
     `).join('');
 
-    // 启用图片懒加载
     vhLzImgInit();
-  } catch {
-    vh.Toast('获取数据失败')
+
+  } catch (error) {
+    console.error('❌ LinksInit 渲染失败：', error);
+    vh.Toast('获取数据失败');
   }
 }
-
-// 友情链接数据源
-import LINKS_DATA from "@/page_data/Link";
-const { api, data } = LINKS_DATA;
-export default () => LinksInit(api || data)
