@@ -26,12 +26,12 @@ const WalineFn = async (commentDOM: string, walineInit: any) => {
     el: commentDOM, path: window.location.pathname.replace(/\/$/, ''), serverURL: SITE_INFO.Comment.Waline.serverURL,
     emoji: ['https://registry.npmmirror.com/@waline/emojis/1.3.0/files/alus', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/bilibili', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/bmoji', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/qq', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/tieba', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/weibo', 'https://registry.npmmirror.com/@waline/emojis/1.3.0/files/soul-emoji'],
     reaction: [
-      "assets/images/owo/paopao/E79C9FE6A392_2x.png",
-      "assets/images/owo/paopao/E98499E8A786_2x.png",
-      "assets/images/owo/paopao/E985B7_2x.png",
-      "assets/images/owo/paopao/E68C96E9BCBB_2x.png",
-      "assets/images/owo/paopao/E9BB91E7BABF_2x.png",
-      "assets/images/owo/paopao/E79DA1E8A789_2x.png",
+      "/assets/images/owo/paopao/E79C9FE6A392_2x.png",
+      "/assets/images/owo/paopao/E98499E8A786_2x.png",
+      "/assets/images/owo/paopao/E985B7_2x.png",
+      "/assets/images/owo/paopao/E68C96E9BCBB_2x.png",
+      "/assets/images/owo/paopao/E9BB91E7BABF_2x.png",
+      "/assets/images/owo/paopao/E79DA1E8A789_2x.png",
     ],
     requiredMeta: ['nick', 'mail'],
     imageUploader: async (file: any) => {
