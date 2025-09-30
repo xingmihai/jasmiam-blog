@@ -115,9 +115,9 @@ export default {
   GoogleAds: {
     ad_Client: 'ca-pub-1811874893901855', //ca-pub-xxxxxx
     // 侧边栏广告(不填不开启)
-    asideAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1811874893901855" data-ad-slot="1811874893901855" data-ad-format="auto" data-full-width-responsive="true"></ins>`,
+    asideAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxx" data-ad-slot="xxxxxx" data-ad-format="auto" data-full-width-responsive="true"></ins>`,
     // 文章页广告(不填不开启)
-    articleAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub1811874893901855" data-ad-slot="1811874893901855" data-ad-format="auto" data-full-width-responsive="true"></ins>`
+    articleAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pubxxxxxx" data-ad-slot="xxxxxx" data-ad-format="auto" data-full-width-responsive="true"></ins>`
   },
   // 文章内赞赏码
   Reward: {
