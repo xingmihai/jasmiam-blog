@@ -9,8 +9,8 @@ date: 2025-09-12 00:30:00
 recommend: true
 ---
 
-::btn[👉 立即体验]{link="https://page.jasmiam.top/raw/太空射击" type="success"}
-::btn[👉 下载源码]{link="" type="success"}
+::btn[👉 立即体验]{link="https://page.jasmiam.top/太空射击" type="success"}
+::btn[👉 下载源码]{link="https://save.jasmiam.top/raw/太空射击游戏.zip" type="success"}
 
 分享一个项目——「`太空射击游戏`」
 ## 🛠 给开发者的建议
