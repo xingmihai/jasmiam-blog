@@ -14,7 +14,7 @@ recommend: true
 源码在 `最下面`
 :::
 预览
-::vhVideo{url="https://originfastly.jsdelivr.net/gh/uxiaohan/uxiaohan.github.io@master/v2/2022/08/index.m3u8"}
+::vhVideo{url=""}
 
 ## ☁️ Cloudflare Workers 云存储文件管理器
 
