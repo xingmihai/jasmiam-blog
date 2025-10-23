@@ -45,6 +45,7 @@ recommend: true
 #### 辅助域名自定义主机名
 :::note{type="error"}
 添加一个默认回退源，我填的是jasmiam.top，因为我的辅助域名的dns记录是@
+
 添加自定义主机名**xmhai.cn**，自定义源服务器选**默认源服务器**
 :::
 
