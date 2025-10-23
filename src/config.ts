@@ -1,6 +1,6 @@
 export default {
   // 网站标题
-  Title: '静谧幻想家的博客',
+  Title: '星觅海的博客',
   // 网站地址
   Site: 'https://jasmiam.top',
   // 网站副标题
