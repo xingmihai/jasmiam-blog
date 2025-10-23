@@ -13,8 +13,8 @@ type: "links"
 :::
 
 ```yaml
-name: JASMIAM博客
-link: https://jasmiam.top/
+name: 星觅海的博客
+link: https://www.xmhai.cn/
 avatar: https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=640
 desc: 除了死亡，一切失败都只存在于心理层面.
 ```
