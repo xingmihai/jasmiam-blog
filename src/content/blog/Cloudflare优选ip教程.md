@@ -20,7 +20,7 @@ recommend: true
 
 优选域我用的是 cloudflare.182682.xyz
 
-网站我是部署在netlify上的
+本站是部署在netlify上的
 :::
 
 ### 🚀 快速开始
