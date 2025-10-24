@@ -1,5 +1,5 @@
 {
-  "name": "xmhai-blog",
+  "name": "blog",
   "compatibility_date": "2025-03-31",
   "assets": {
     "directory": "./dist"
