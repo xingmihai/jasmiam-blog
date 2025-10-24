@@ -8,7 +8,7 @@ export default {
   // 网站描述
   Description: '星觅海的博客 专注于相关技术的实战分享。同时，博客也分享作者的生活、音乐和旅行的热爱。',
   // 网站作者
-  Author: 'XMHAI',
+  Author: '𝑿𝑴𝑯𝑨𝑰',
   // 作者头像
   Avatar: 'https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=640',
   // 网站座右铭
@@ -62,7 +62,7 @@ export default {
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
-    { text: 'Github', link: 'https://github.com/jasm1am', icon: 'WebSite_github' },
+    { text: 'Github', link: 'https://github.com/xingmih', icon: 'WebSite_github' },
     { text: '骤雨重山图床', link: 'https://img.jasmiam.top', icon: 'WebSite_img' },
     { text: 'Analytics', link: 'https://analytics.jasmiam.top', icon: 'WebSite_analytics' },
     { text: 'MT论坛', link: 'https://bbs.binmt.cc/home.php?mod=space&uid=147108&do=profile', icon: 'WebSite_mt' },
