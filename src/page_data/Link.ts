@@ -4,10 +4,10 @@ export default {
   // api 为空则使用 data 静态数据
   data: [
     {
-      "name": "易搜特收录网",
-      "link": "https://www.esoot.com",
-      "avatar": "https://esoot.com/zb_users/theme//JackSite/public/favicon.ico",
-      "descr": ""
+      "name": "笑的博客",
+      "link": "https://blog.xiaow.qzz.io",
+      "avatar": "http://img.magicalapp.cn/api/image/show/21dc2a2308c039d958fabf4815594f42",
+      "descr": "一起分享，共同进步"
     },
   ]
 }
