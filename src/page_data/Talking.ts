@@ -5,6 +5,13 @@ export default {
   // 注意：图片请用 vh-img-flex 类包裹
   data: [
     {
+      "date": "2025-12-14 10:00:00",
+      "tags": [
+        "🌵"
+      ],
+      "content": "在自己的世界里，万物都拥有恰到好处的音量。<p class=\"ji-img-flex\"><img src=\"https://img.xmhai.cn/v2/YEqszPR.jpeg\"></p>"
+    },
+    {
       "date": "2025-09-10 17:18:00",
       "tags": [
         "🌞"
