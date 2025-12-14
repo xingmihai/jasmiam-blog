@@ -26,7 +26,7 @@ recommend: true
 ---
 
 ### 部署流程
-![1001276374.png](https://img.jasmiam.top/v2/2pohgLP.png)
+![1001276374.png](https://img.xmhai.cn/v2/2pohgLP.png)
 
 ### ✨ 功能特性
 
@@ -156,9 +156,9 @@ MIT License — 可自由使用、修改和分发
 📸 **界面预览：**
 
 :::picture
-![Astro主题-vhAstro-Theme](https://img.jasmiam.top/v2/CnJtItN.jpeg)
-![Astro主题-vhAstro-Theme](https://img.jasmiam.top/v2/uP1am9E.jpeg)
-![Astro主题-vhAstro-Theme](https://img.jasmiam.top/v2/zJbJWxM.jpeg)
+![Astro主题-vhAstro-Theme](https://img.xmhai.cn/v2/CnJtItN.jpeg)
+![Astro主题-vhAstro-Theme](https://img.xmhai.cn/v2/uP1am9E.jpeg)
+![Astro主题-vhAstro-Theme](https://img.xmhai.cn/v2/zJbJWxM.jpeg)
 :::
 
 ## 如果要不输入密码也能下载将以下代码
