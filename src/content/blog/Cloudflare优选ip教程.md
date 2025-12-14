@@ -38,8 +38,8 @@ recommend: true
 | cname或A | @ | 网址或ip | 开 |
 
 :::picture
-![Screenshot_2025-10-24-04-50-31-809_mark.via.png](https://img.jasmiam.top/v2/iaBzi9V.png)
-![Screenshot_2025-10-24-04-51-11-410_mark.via.png](https://img.jasmiam.top/v2/EVNlWSs.png)
+![Screenshot_2025-10-24-04-50-31-809_mark.via.png](https://img.xmhai.cn/v2/iaBzi9V.png)
+![Screenshot_2025-10-24-04-51-11-410_mark.via.png](https://img.xmhai.cn/v2/EVNlWSs.png)
 :::
 
 #### 辅助域名自定义主机名
@@ -50,8 +50,8 @@ recommend: true
 :::
 
 :::picture
-![Screenshot_2025-10-24-04-56-16-885_mark.via.png](https://img.jasmiam.top/v2/l5MfHvx.png)
-![Screenshot_2025-10-24-04-55-12-042_mark.via.png](https://img.jasmiam.top/v2/xgyeaYu.png)
+![Screenshot_2025-10-24-04-56-16-885_mark.via.png](https://img.xmhai.cn/v2/l5MfHvx.png)
+![Screenshot_2025-10-24-04-55-12-042_mark.via.png](https://img.xmhai.cn/v2/xgyeaYu.png)
 :::
 
 #### 主域名dns配置
@@ -59,7 +59,7 @@ recommend: true
 | :--: | :--: | :--: | :--: |
 | cname | @ | cdn.jasmiam.top | 关 |
 
-![Screenshot_2025-10-24-05-15-18-220_mark.via.png](https://img.jasmiam.top/v2/e8cQr9R.png)
+![Screenshot_2025-10-24-05-15-18-220_mark.via.png](https://img.xmhai.cn/v2/e8cQr9R.png)
 
 > 然后访问**xmhai.cn**就可以了
 
@@ -72,7 +72,7 @@ recommend: true
 | :--: | :--: | :--: | :--: |
 | cname或A | page | 网址或ip | 开 |
 
-![Screenshot_2025-10-24-05-02-25-332_mark.via.png](https://img.jasmiam.top/v2/lbQQsz0.png)
+![Screenshot_2025-10-24-05-02-25-332_mark.via.png](https://img.xmhai.cn/v2/lbQQsz0.png)
 
 #### 辅助域名自定义主机名
 
@@ -80,7 +80,7 @@ recommend: true
 自定义主机名填page.xmhai.cn，自定义源服务器选**自定义源服务器**填写page.jasmiam.top
 :::
 
-![Screenshot_2025-10-24-05-04-27-128_mark.via.png](https://img.jasmiam.top/v2/yJhkvUy.png)
+![Screenshot_2025-10-24-05-04-27-128_mark.via.png](https://img.xmhai.cn/v2/yJhkvUy.png)
 
 #### 主域名dns配置
 
@@ -88,6 +88,6 @@ recommend: true
 | :--: | :--: | :--: | :--: |
 | cname | page | cdn.jasmiam.top | 关 |
 
-![Screenshot_2025-10-24-05-14-03-648_mark.via.png](https://img.jasmiam.top/v2/TuMnQiY.png)
+![Screenshot_2025-10-24-05-14-03-648_mark.via.png](https://img.xmhai.cn/v2/TuMnQiY.png)
 
 > 然后访问**page.xmhai.cn**就行了
