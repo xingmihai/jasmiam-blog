@@ -32,7 +32,7 @@ export default {
     // 其他页面高度
     PageHeight: '28.88rem',
     // 背景
-    background: "url('https://photogzmaz.photo.store.qq.com/psc?/V50C52gl0PkrWX2gWYQs4PCFNF0ct9iP/bqQfVz5yrrGYSXMvKr.cqRC1xbiI*tLJXl.c6VXrzRdkMsxcxFrOhsxmn4POUU2EHVNKNnO8*uiB0haSQeB8NjRgOO.LJtYx9Z*N4SUEqkI!/b&bo=gAc4BIAHOAQAACY!&rf=mood_app&t=5') no-repeat center 60%/cover",
+    background: "url('http://shp.qpic.cn/collector/1498934815/ef314faf-ede3-47f3-bdee-b445cf8e866c/0') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
