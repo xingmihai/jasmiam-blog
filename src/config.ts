@@ -32,7 +32,7 @@ export default {
     // 其他页面高度
     PageHeight: '28.88rem',
     // 背景
-    background: "url('http://shp.qpic.cn/collector/1498934815/ef314faf-ede3-47f3-bdee-b445cf8e866c/0') no-repeat center 60%/cover",
+    background: "url('https://pan.xmhai.cn/home-banner.webp') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
