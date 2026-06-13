@@ -14,6 +14,12 @@ export default {
     "link": "https://www.vvhan.com/",
     "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=100",
     "descr": "运气是计划之外的东西."
+    },
+    {
+    "name": "https://webteleporter.top/favicon.ico?favicon.559ac48c.ico",
+    "link": "https://webteleporter.top/",
+    "avater": "独立博客传送门",
+    "descr": "独立博客传送门"
     }
   ]
 }
