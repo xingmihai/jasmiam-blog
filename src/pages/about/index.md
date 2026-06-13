@@ -1,12 +1,13 @@
 ---
 title: "关于"
 h1: "关于我"
-desc: "Hi there, I’m XMHAI 👋"
+desc: "你好 👋"
 layout: "@/layouts/PageLayout/PageLayout.astro"
 type: "about"
 ---
 
 
+- 本站已加入[萌备](https://icp.gov.moe/?keyword=20259910)
 ## 小站点
 
 |     主&emsp;页      |       <https://page.xmhai.cn>        |
