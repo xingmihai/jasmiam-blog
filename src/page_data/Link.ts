@@ -16,9 +16,9 @@ export default {
     "descr": "运气是计划之外的东西."
     },
     {
-    "name": "https://webteleporter.top/favicon.ico?favicon.559ac48c.ico",
+    "name": "WebTeleporter",
     "link": "https://webteleporter.top/",
-    "avater": "独立博客传送门",
+    "avater": "https://webteleporter.top/favicon.ico?favicon.559ac48c.ico",
     "descr": "独立博客传送门"
     }
   ]
