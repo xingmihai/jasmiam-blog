@@ -10,10 +10,10 @@ export default {
       "descr": "一起分享，共同进步"
     },
     {
-    name: 韩小韩博客
-    link: https://www.vvhan.com/
-    avatar: https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=100
-    desc: 运气是计划之外的东西.
+    "name": 韩小韩博客
+    "link": https://www.vvhan.com/
+    "avatar": https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=100
+    "desc": 运气是计划之外的东西.
     }
   ]
 }
