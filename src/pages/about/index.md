@@ -8,6 +8,7 @@ type: "about"
 
 
 - 本站已加入[萌备](https://icp.gov.moe/?keyword=20259910)
+- 本站已加入[BlogsClub - 博客俱乐部](https://www.blogsclub.org/blog/758.html)
 ## 小站点
 
 |     主&emsp;页      |       <https://page.xmhai.cn>        |
