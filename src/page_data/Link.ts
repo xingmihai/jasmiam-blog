@@ -30,7 +30,7 @@ export default {
     {
     "name": "BlogsClub",
     "link": "https://www.blogsclub.org/",
-    "avatar": "www.blogsclub.org/usr/themes/default/favicon.png",
+    "avatar": "https://www.blogsclub.org/usr/themes/default/favicon.png",
     "descr": "博客俱乐部."
     }
   ]
