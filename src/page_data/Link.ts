@@ -6,7 +6,7 @@ export default {
     {
       "name": "笑的博客",
       "link": "https://blog.xiaow.qzz.io",
-      "avatar": "https://wp-cdn.4ce.cn/v2/TVFIv5x.jpeg",
+      "avatar": "https://blog.xiaow.qzz.io/favicon.ico",
       "descr": "一起分享，共同进步"
     },
   ]
