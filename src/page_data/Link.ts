@@ -18,7 +18,7 @@ export default {
     {
     "name": "WebTeleporter",
     "link": "https://webteleporter.top/",
-    "avater": "https://webteleporter.top/favicon.ico",
+    "avater": "https://save.xmhai.cn/raw/favicon/1000047344.ico",
     "descr": "独立博客传送门"
     }
   ]
