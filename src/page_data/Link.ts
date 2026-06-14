@@ -32,6 +32,12 @@ export default {
     "link": "https://www.blogsclub.org/",
     "avatar": "https://www.blogsclub.org/usr/themes/default/favicon.png",
     "descr": "博客俱乐部."
+    },
+    {
+    "name": "博友圈",
+    "link": "https://www.boyouquan.com/",
+    "avatar": "https://www.boyouquan.com/assets/favicon.ico",
+    "descr": "博客人的博友圈！"
     }
   ]
 }
