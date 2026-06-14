@@ -16,7 +16,7 @@ comment: true
 
 ### 🌟 项目简介
 :::note
- 📌 [FlareDrive-R2-Workers](https://github.com/xingmihai/FlareDrive-R2-Workers)修改自 [Cloudflare-R2](https://github.com/willow-god/FlareDrive-R2/)，因为Cloudflare pages 优选太麻烦，所以有了此项目
+ 📌 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/xingmihai/FlareDrive-R2-Workers)，因为Cloudflare pages 优选太麻烦，所以有了此项目
 :::
 
 ## 前置要求
