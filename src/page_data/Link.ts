@@ -37,7 +37,7 @@ export default {
     "name": "博友圈",
     "link": "https://www.boyouquan.com/",
     "avatar": "https://www.boyouquan.com/assets/favicon.ico",
-    "descr": "博客人的博友圈！"
+    "descr": "博客人的朋友圈！"
     }
   ]
 }
