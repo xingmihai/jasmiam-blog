@@ -32,7 +32,7 @@ export default defineConfig({
 		updateBodyClass: false,
 		globalInstance: true
 	}),
-	Compress({ CSS: false, Image: false, Action: { Passed: async () => true } }),
+	Compress({ CSS: true, Image: true, Action: { Passed: async () => true } }),
 	sitemap({
 		changefreq: 'weekly', priority: 0.7, lastmod: new Date(),
 		// 处理末尾带 / 的 url
