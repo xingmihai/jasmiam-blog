@@ -12,7 +12,7 @@ export default async (videoList: any[]) => {
   videoDOM.forEach((i: any) => {
     const dp = new DPlayer({
       container: i,
-      logo: "/assets/images/logo.png",
+      logo: "https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=1",
       volume: 0.7,
       mutex: true,
       video: {
