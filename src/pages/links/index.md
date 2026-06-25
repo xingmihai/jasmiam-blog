@@ -7,7 +7,7 @@ type: "links"
 ---
 
 :::note{type="success"}
-✉️ 邮件到  xingmihai@qq.com 按以下格式留下你的友链数据，和我互换友链吧！
+<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=7paHgImDh4aPh66fn8CNgYM" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a> 按以下格式留下你的友链数据，和我互换友链吧！
 
 👭 排名不分先后，每次刷新 友链 会随机排列噢~
 :::
