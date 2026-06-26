@@ -1,8 +1,9 @@
 ---
 title: TalkEase - 实时聊天
-categories: <img src="https://dash.cloudflare.com/favicon-196x196.png" alt="十年之约" width="196>
+categories: Workers
 tags:
   - Cloudflare
+  - Workers
   - 实时聊天
   - 开源
 id: 202510190515
