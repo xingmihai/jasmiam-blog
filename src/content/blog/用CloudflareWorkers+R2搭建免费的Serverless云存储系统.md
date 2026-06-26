@@ -1,8 +1,9 @@
 ---
 title: 用 Cloudflare Workers + R2 搭建免费的 Serverless 云存储系统
-categories: Cloudflare
+categories: cf
 tags:
   - Cloudflare
+  - Workers
   - 自建云盘
   - 开源
 id: 20250914
