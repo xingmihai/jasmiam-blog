@@ -14,8 +14,6 @@ recommend: true
 :::note{type="error"}
 源码在 `最下面`
 :::
-预览
-::vhVideo{url=""}
 
 ## ☁️ Cloudflare Workers 云存储文件管理器
 
