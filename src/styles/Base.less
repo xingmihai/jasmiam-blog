@@ -1,45 +1,40 @@
 :root {
-	// 白色颜色
-	--vh-white-color: #fff;
-	// BoxShadow
-	--vh-box-shadow: 0 3px 8px 6px #07111b0d;
-	// Body 背景颜色
-	--vh-body-bg: #F8F8F8;
-	// Back Top 按钮位置
+	--vh-white-color: #e0e0e0;
+	--vh-box-shadow: 0 0 20px rgba(0, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.5);
+	--vh-body-bg: #0a0a12;
 	--vh-back-top: calc((calc(100vw - 2rem) - min((100vw - 2rem), var(--vh-main-max-width))) / 2 + 1rem);
-	// 字体颜色
 	--vh-font-88: rgb(from var(--vh-font-color) r g b / 88%);
 	--vh-font-66: rgb(from var(--vh-font-color) r g b / 66%);
 	--vh-font-56: rgb(from var(--vh-font-color) r g b / 56%);
 	--vh-font-28: rgb(from var(--vh-font-color) r g b / 28%);
 	--vh-font-16: rgb(from var(--vh-font-color) r g b / 16%);
 	--vh-font-6: rgb(from var(--vh-font-color) r g b / 6%);
-	// 主题色
 	--vh-main-color-88: rgb(from var(--vh-main-color) r g b / 88%);
 	--vh-main-color-66: rgb(from var(--vh-main-color) r g b / 66%);
 	--vh-main-color-56: rgb(from var(--vh-main-color) r g b / 56%);
 	--vh-main-color-28: rgb(from var(--vh-main-color) r g b / 28%);
 	--vh-main-color-16: rgb(from var(--vh-main-color) r g b / 16%);
 	--vh-main-color-6: rgb(from var(--vh-main-color) r g b / 6%);
+	--neon-cyan: #00f0ff;
+	--neon-magenta: #ff00ff;
+	--neon-yellow: #fff700;
+	--neon-purple: #b000ff;
+	--neon-green: #00ff88;
+	--cyber-grid: rgba(0, 240, 255, 0.06);
+	--cyber-border: rgba(0, 240, 255, 0.3);
 
-	// Default 
-	--vh-default: #BEC4CC;
-	--vh-default-hover: #BEC4CC18;
-	// Info 
-	--vh-info: #3253b4;
-	--vh-info-hover: #3253b418;
-	// Success
-	--vh-success: #01C4B6;
-	--vh-success-hover: #01C4B618;
-	// Warning
-	--vh-warning: #DD8636;
-	--vh-warning-hover: #DD863618;
-	// Error
-	--vh-error: #DE3C3D;
-	--vh-error-hover: #DE3C3D18;
-	// Import
-	--vh-import: #B984DF;
-	--vh-import-hover: #B984DF18;
+	--vh-default: #6b7280;
+	--vh-default-hover: #6b728018;
+	--vh-info: #00b8ff;
+	--vh-info-hover: #00b8ff18;
+	--vh-success: #00ff88;
+	--vh-success-hover: #00ff8818;
+	--vh-warning: #ffaa00;
+	--vh-warning-hover: #ffaa0018;
+	--vh-error: #ff3366;
+	--vh-error-hover: #ff336618;
+	--vh-import: #cc00ff;
+	--vh-import-hover: #cc00ff18;
 }
 
 * {
@@ -92,7 +87,13 @@ html {
 			top: 0;
 			width: 100vw;
 			height: 100vh;
-			background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='rgb(0 0 0 / 0.1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+			background-color: #0a0a12;
+			background-image:
+				linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+				radial-gradient(ellipse at 20% 20%, rgba(0, 240, 255, 0.08) 0%, transparent 50%),
+				radial-gradient(ellipse at 80% 80%, rgba(255, 0, 255, 0.06) 0%, transparent 50%);
+			background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
 			z-index: -1;
 		}
 
