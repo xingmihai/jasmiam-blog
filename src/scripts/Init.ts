@@ -16,7 +16,7 @@ import BackTopInitFn from "@/scripts/BackTop";
 // 搜索
 import { searchFn, vhSearchInit } from "@/scripts/Search";
 // 图片懒加载
-import vhLzImgInit from "@/scripts/vhLazyImg";
+import vhLzImgInit, { resetLazyLoad } from "@/scripts/vhLazyImg";
 // 图片灯箱
 import ViewImage from "@/scripts/ViewImage";
 // 底部网站运行时间
@@ -88,6 +88,8 @@ export default () => {
   inRouter(() => indexInit(false));
   // 离开当前页面时触发
   outRouter(() => {
+    // 销毁懒加载
+    resetLazyLoad();
     // 销毁评论
     commentLIst.walineInit && commentLIst.walineInit.destroy();
     commentLIst.walineInit = null;
