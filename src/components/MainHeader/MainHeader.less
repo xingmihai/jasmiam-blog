@@ -11,26 +11,7 @@
   transition: height 0.58s ease-in-out;
   z-index: 1;
   overflow: hidden;
-  padding: 2rem 1rem;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(180deg, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.3) 40%, rgba(15, 23, 42, 0.8) 100%);
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at center top, rgba(99, 102, 241, 0.25) 0%, transparent 60%);
-    z-index: 0;
-    pointer-events: none;
-  }
+  padding: 2.5rem 1rem;
 
   &>.header-banner {
     position: absolute;
@@ -41,25 +22,21 @@
     object-position: center 50%;
     z-index: -1;
     pointer-events: none;
-    filter: saturate(0.85) contrast(1.05) brightness(0.55);
   }
 
   &>.avatar {
-    width: 7.5rem;
-    height: 7.5rem;
-    border: 3px solid transparent;
+    width: 7rem;
+    height: 7rem;
+    border: 3px solid #fff;
     border-radius: 50%;
-    background:
-      linear-gradient(#0f172a, #0f172a) padding-box,
-      linear-gradient(135deg, #6366f1, #22d3ee) border-box;
-    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1;
 
     &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.45);
+      transform: scale(1.04);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     }
 
     &>img {
@@ -72,46 +49,32 @@
   &>.auther {
     padding-top: 0.5rem;
     font-size: 1.75rem;
-    font-weight: 700;
-    color: #f8fafc;
-    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: #1f2937;
+    letter-spacing: 0.01em;
     z-index: 1;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
   }
 
   &>.desc {
     position: relative;
     box-sizing: border-box;
-    padding: 0.75rem 0.88rem 0;
+    padding-top: 0.75rem;
     width: 100%;
-    max-width: 30rem;
+    max-width: 28rem;
     height: max-content;
-    color: #cbd5e1;
+    color: #6b7280;
     text-align: center;
-    font-size: 0.88rem;
-    line-height: 1.6rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
     z-index: 1;
-    letter-spacing: 0.02em;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%);
-      width: 3rem;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #6366f1, transparent);
-      border-radius: 1px;
-    }
+    letter-spacing: 0.01em;
 
     &::after {
       content: "▌";
       padding-left: 0.188rem;
       display: inline-block;
       animation: blink 1s infinite;
-      color: #6366f1;
+      color: #3b82f6;
       font-weight: 300;
     }
 
@@ -125,12 +88,12 @@
 
 @media screen and (max-width: 1150px) {
   .header-main {
-    height: 24rem;
+    height: 22rem;
     gap: 0.75rem;
 
     &>.avatar {
-      width: 5.5rem;
-      height: 5.5rem;
+      width: 5rem;
+      height: 5rem;
     }
 
     &>.auther {
@@ -139,9 +102,8 @@
     }
 
     &>.desc {
-      max-width: 24rem;
-      font-size: 0.8rem;
-      line-height: 1.4rem;
+      max-width: 22rem;
+      font-size: 0.85rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 :root {
-	--vh-white-color: #e2e8f0;
-	--vh-box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(148, 163, 184, 0.08);
-	--vh-body-bg: #0f172a;
+	--vh-white-color: #fff;
+	--vh-box-shadow: 0 3px 8px 6px rgba(0, 0, 0, 0.04);
+	--vh-body-bg: #f8f9fb;
 	--vh-back-top: calc((calc(100vw - 2rem) - min((100vw - 2rem), var(--vh-main-max-width))) / 2 + 1rem);
 	--vh-font-88: rgb(from var(--vh-font-color) r g b / 88%);
 	--vh-font-66: rgb(from var(--vh-font-color) r g b / 66%);
@@ -15,29 +15,25 @@
 	--vh-main-color-28: rgb(from var(--vh-main-color) r g b / 28%);
 	--vh-main-color-16: rgb(from var(--vh-main-color) r g b / 16%);
 	--vh-main-color-6: rgb(from var(--vh-main-color) r g b / 6%);
-	--cyber-primary: #6366f1;
-	--cyber-secondary: #22d3ee;
-	--cyber-accent: #a78bfa;
-	--cyber-bg: #0f172a;
-	--cyber-card: #1e293b;
-	--cyber-border: rgba(148, 163, 184, 0.15);
-	--cyber-grid: rgba(99, 102, 241, 0.04);
-	--cyber-text: #e2e8f0;
-	--cyber-text-secondary: #94a3b8;
-	--cyber-text-muted: #64748b;
+	--modern-primary: #3b82f6;
+	--modern-secondary: #6366f1;
+	--modern-accent: #8b5cf6;
+	--modern-success: #10b981;
+	--modern-warning: #f59e0b;
+	--modern-error: #ef4444;
 
-	--vh-default: #64748b;
-	--vh-default-hover: #64748b18;
-	--vh-info: #38bdf8;
-	--vh-info-hover: #38bdf818;
-	--vh-success: #34d399;
-	--vh-success-hover: #34d39918;
-	--vh-warning: #fbbf24;
-	--vh-warning-hover: #fbbf2418;
-	--vh-error: #f87171;
-	--vh-error-hover: #f8717118;
-	--vh-import: #a78bfa;
-	--vh-import-hover: #a78bfa18;
+	--vh-default: #9ca3af;
+	--vh-default-hover: #9ca3af18;
+	--vh-info: #3b82f6;
+	--vh-info-hover: #3b82f618;
+	--vh-success: #10b981;
+	--vh-success-hover: #10b98118;
+	--vh-warning: #f59e0b;
+	--vh-warning-hover: #f59e0b18;
+	--vh-error: #ef4444;
+	--vh-error-hover: #ef444418;
+	--vh-import: #8b5cf6;
+	--vh-import-hover: #8b5cf618;
 }
 
 * {
@@ -90,13 +86,7 @@ html {
 			top: 0;
 			width: 100vw;
 			height: 100vh;
-			background-color: #0f172a;
-			background-image:
-				linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
-				linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px),
-				radial-gradient(ellipse at top, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
-				radial-gradient(ellipse at bottom right, rgba(34, 211, 238, 0.05) 0%, transparent 50%);
-			background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+			background: #f8f9fb url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='8' height='8' fill='none' stroke='rgb(0 0 0 / 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 			z-index: -1;
 		}
 
