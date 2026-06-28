@@ -207,7 +207,7 @@ img[data-vh-lz-src] {
 	opacity: 0;
 	animation: 300ms vh-init-show;
 	animation-fill-mode: forwards;
-	transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
+	will-change: transform, opacity;
 }
 
 // swup 动画效果
@@ -215,7 +215,7 @@ html.swup-enabled,
 html.is-changing {
 	.vh-animation {
 		&.vh-animation-init {
-			transform: translateY(0);
+			transform: translate3d(0, 0, 0);
 			opacity: 1;
 			animation: none;
 		}
@@ -225,7 +225,7 @@ html.is-changing {
 html.is-animating {
 	.vh-animation {
 		&.vh-animation-init {
-			transform: translateY(0.88rem);
+			transform: translate3d(0, 0.88rem, 0);
 			opacity: 0;
 		}
 	}
@@ -307,45 +307,49 @@ html.is-animating {
 
 @keyframes vh-init-show {
 	0% {
-		transform: translateY(2rem);
+		transform: translate3d(0, 2rem, 0);
 		opacity: 0;
 	}
 
 	100% {
-		transform: translateY(0);
+		transform: translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
 
 @keyframes vh-loading-animation {
 	50% {
-		height: 25px
+		height: 25px;
+		transform: scale3d(1.2, 1.2, 1);
 	}
 
 	0% {
-		height: 5px
+		height: 5px;
+		transform: scale3d(1, 1, 1);
 	}
 }
 
 @-webkit-keyframes vh-init-show {
 	0% {
-		transform: translateY(2rem);
+		transform: translate3d(0, 2rem, 0);
 		opacity: 0;
 	}
 
 	100% {
-		transform: translateY(0);
+		transform: translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
 
 @-webkit-keyframes vh-loading-animation {
 	50% {
-		height: 25px
+		height: 25px;
+		transform: scale3d(1.2, 1.2, 1);
 	}
 
 	0% {
-		height: 5px
+		height: 5px;
+		transform: scale3d(1, 1, 1);
 	}
 }
 
@@ -353,44 +357,44 @@ html.is-animating {
 // 动画效果
 @keyframes talking-tag-active {
 	0% {
-		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
 	}
 
 	25% {
-		transform: translateX(-1.66px);
+		transform: translate3d(-1.66px, 0, 0);
 	}
 
 	50% {
-		transform: translateX(1.66px);
+		transform: translate3d(1.66px, 0, 0);
 	}
 
 	75% {
-		transform: translateX(-1.66px);
+		transform: translate3d(-1.66px, 0, 0);
 	}
 
 	100% {
-		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
 	}
 }
 
 @-webkit-keyframes talking-tag-active {
 	0% {
-		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
 	}
 
 	25% {
-		transform: translateX(-1.66px);
+		transform: translate3d(-1.66px, 0, 0);
 	}
 
 	50% {
-		transform: translateX(1.66px);
+		transform: translate3d(1.66px, 0, 0);
 	}
 
 	75% {
-		transform: translateX(-1.66px);
+		transform: translate3d(-1.66px, 0, 0);
 	}
 
 	100% {
-		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
 	}
 }

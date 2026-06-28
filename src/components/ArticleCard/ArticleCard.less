@@ -23,20 +23,27 @@
       width: 100%;
       height: initial;
       min-height: max-content;
-      border: solid 1px #eee;
+      border: 1px solid #e8e8e8;
       border-radius: 1rem;
       background-color: #fff;
       overflow: hidden;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 
       &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        border-color: transparent;
+
         &>.vh-article-banner {
           &>img {
-            transform: scale(1.08);
+            transform: scale(1.06);
           }
         }
       }
 
       &.active {
+        border-color: var(--vh-main-color);
+
         &::before {
           content: "置顶";
           position: absolute;
@@ -50,14 +57,9 @@
           color: #fff;
           border-radius: 0.66rem;
           transform: rotate(-45deg);
-          /* 确保元素有半透明背景 */
-          background: #00000033;
-          box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+          background: linear-gradient(135deg, var(--vh-main-color), var(--vh-main-color-66));
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
           z-index: 1;
-          /* 高斯模糊效果 */
-          backdrop-filter: blur(6px);
-          -webkit-backdrop-filter: blur(6px);
-          /* 兼容旧版浏览器 */
         }
 
         &>.vh-article-banner {
@@ -68,7 +70,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.06);
+            background: linear-gradient(180deg, rgba(0,0,0,0.08) 0%, transparent 50%);
             z-index: 1;
             pointer-events: none;
           }
@@ -88,6 +90,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: transform 0.38s ease;
         }
       }
 
@@ -113,52 +116,39 @@
             width: max-content;
             font-size: 0.875rem;
             font-weight: 700;
-            /* 默认渐变色起始 */
-            --gradient-color-1: #a32cc4;
-            /* 默认渐变色中间 */
-            --gradient-color-2: #b65fcf;
-            /* 默认渐变色结束 */
-            --gradient-color-3: #e39ff6;
-            background: linear-gradient(118deg, var(--gradient-color-1), var(--gradient-color-2) 26%, var(--gradient-color-3));
+            background: linear-gradient(118deg, #a32cc4, #b65fcf 26%, #e39ff6);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
+            transition: filter 0.2s ease;
+
+            &:hover {
+              filter: brightness(1.1);
+            }
 
             &.vh-cat-Code {
-              /* 默认渐变色起始 */
-              --gradient-color-1: #f48600;
-              /* 默认渐变色中间 */
-              --gradient-color-2: #ffa12e;
-              /* 默认渐变色结束 */
-              --gradient-color-3: #ffe9c9;
+              background: linear-gradient(118deg, #f48600, #ffa12e 26%, #ffe9c9);
+              background-clip: text;
+              -webkit-background-clip: text;
             }
 
             &.vh-cat-Daily {
-              /* 默认渐变色起始 */
-              --gradient-color-1: #6270ee;
-              /* 默认渐变色中间 */
-              --gradient-color-2: #2b90d9;
-              /* 默认渐变色结束 */
-              --gradient-color-3: #37dede;
+              background: linear-gradient(118deg, #6270ee, #2b90d9 26%, #37dede);
+              background-clip: text;
+              -webkit-background-clip: text;
             }
 
             &.vh-cat-Software {
-              /* 默认渐变色起始 */
-              --gradient-color-1: #006633;
-              /* 默认渐变色中间 */
-              --gradient-color-2: #00cc66;
-              /* 默认渐变色结束 */
-              --gradient-color-3: #66ff99;
+              background: linear-gradient(118deg, #006633, #00cc66 26%, #66ff99);
+              background-clip: text;
+              -webkit-background-clip: text;
             }
 
             &.vh-cat-Share {
-              /* 默认渐变色起始 */
-              --gradient-color-1: rgb(240, 45, 133);
-              /* 默认渐变色中间 */
-              --gradient-color-2: #f95ba5;
-              /* 默认渐变色结束 */
-              --gradient-color-3: #f4bdd0;
+              background: linear-gradient(118deg, #f02d85, #f95ba5 26%, #f4bdd0);
+              background-clip: text;
+              -webkit-background-clip: text;
             }
           }
 
@@ -167,7 +157,7 @@
             margin-top: auto;
             font-size: 0.805rem;
             font-weight: 400;
-            color: var(--vh-font-color);
+            color: var(--vh-font-66);
             width: max-content;
           }
         }
@@ -181,7 +171,7 @@
           &>a {
             font-size: 1.06rem;
             font-weight: 600;
-            transition: color 0.18s;
+            transition: color 0.18s ease;
 
             &:hover {
               color: var(--vh-main-color);
@@ -214,10 +204,10 @@
         &>a {
           box-sizing: border-box;
           margin-right: 0.88rem;
-          color: var(--vh-font);
+          color: var(--vh-font-56);
           font-size: 0.688rem;
           font-weight: 400;
-          transition: color 0.18s;
+          transition: color 0.18s ease;
 
           &:hover {
             color: var(--vh-main-color);
