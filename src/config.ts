@@ -91,7 +91,10 @@ export default {
     'https://i0.wp.com',
     'https://cn.cravatar.com',
     'https://analytics.jasmiam.top',
-    'https://pagead2.googlesyndication.com'
+    'https://pagead2.googlesyndication.com',
+    'https://img.xmhai.cn',
+    'https://vercel-waline.xmhai.cn',
+    'https://unpkg.com'
   ],
   // 博客音乐组件解析接口
   vhMusicApi: 'https://vh-api.4ce.cn/blog/meting',

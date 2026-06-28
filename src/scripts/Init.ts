@@ -46,49 +46,39 @@ import SmoothScroll from "@/scripts/Smoothscroll";
 const videoList: any[] = [];
 const MusicList: any[] = [];
 let commentLIst: any = { walineInit: null };
+
+const idleTask = (fn: () => void) => {
+  if ('requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(fn, { timeout: 3000 });
+  } else {
+    setTimeout(fn, 1000);
+  }
+};
+
 const indexInit = async (only: boolean = true) => {
-  // 初始化网站运行时间
-  only && initWebSiteTime();
-  // 初始化BackTop组件
-  only && BackTopInitFn();
-  // SmoothScroll 滚动优化
-  only && SmoothScroll();
-  // 图片灯箱
-  only && ViewImage();
-  // 初始化文章代码块
-  codeInit();
-  // 图片懒加载初始化
   vhLzImgInit();
-  // 初始化 LivePhoto
+  codeInit();
+  only && initWebSiteTime();
+  only && BackTopInitFn();
+  only && SmoothScroll();
+  only && ViewImage();
   livePhotoInit();
-  // 文章视频播放器初始化
   videoInit(videoList);
-  // 文章音乐播放器初始化
   musicInit(MusicList);
-  // 友情链接初始化
   initLinks();
-  // 朋友圈 RSS 初始化
   initFriends();
-  // 动态说说初始化
   initTalking();
-  // Google 广告
-  GoogleAdInit();
-  // 谷歌 SEO 推送
-  SeoPushInit();
-  // 文章评论初始化
-  checkComment() && commentInit(checkComment(), commentLIst)
-  // Han Analytics 统计
-  AnalyticsInit();
-  // 打字效果
   only && TypeWriteInit();
-  // 泡泡🫧效果
   PaoPaoInit();
-  // 预加载搜索数据
   only && searchFn("");
-  // 初始化搜索功能
   vhSearchInit();
-  // 移动端侧边栏初始化
   initMobileSidebar();
+  idleTask(() => {
+    GoogleAdInit();
+    SeoPushInit();
+    checkComment() && commentInit(checkComment(), commentLIst);
+    AnalyticsInit();
+  });
 };
 
 export default () => {
