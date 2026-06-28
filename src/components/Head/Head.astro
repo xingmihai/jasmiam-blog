@@ -57,6 +57,10 @@ import "@/styles/Base.less";
 	<!-- DNS预解析 -->
 	{DNSOptimization.map((url: string) => <link rel="dns-prefetch" href={url} />)}
 	{DNSOptimization.map((url: string) => <link rel="preconnect" href={url} />)}
+	<!-- 字体 CSS 异步加载 -->
+	<link rel="preload" as="style" href="/assets/font/index.css" />
+	<link rel="stylesheet" href="/assets/font/index.css" media="print" onload="this.media='all'" />
+	<noscript><link rel="stylesheet" href="/assets/font/index.css" /></noscript>
 	<!-- LINK 标签 -->
 	<link rel="canonical" href={canonicalURL} />
 	<link rel="icon" type="image/x-icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=1498934815&spec=100" />

@@ -1,11 +1,13 @@
 ---
 import SITE_INFO from "@/config";
 import "./MainHeader.less";
+const bannerUrl = SITE_INFO.HomeBanner.background.match(/url\(['"]?([^'")]+)['"]?\)/)?.[1] || '';
 ---
 
 <div class="header-main">
+	<img class="header-banner" src={bannerUrl} alt="banner" fetchpriority="high" />
 	<div class="avatar">
-		<img src="/assets/images/lazy-loading.webp" data-vh-lz-src={SITE_INFO.Avatar} alt="avatar" />
+		<img src={SITE_INFO.Avatar} alt="avatar" fetchpriority="high" />
 	</div>
 	<h3 class="auther">{SITE_INFO.Author || "-"}</h3>
 {Array.isArray(SITE_INFO.TypeWriteList) && SITE_INFO.TypeWriteList.length > 0 && (

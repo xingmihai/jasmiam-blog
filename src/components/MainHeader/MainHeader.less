@@ -10,14 +10,17 @@
   height: var(--vh-main-header-height);
   transition: height 0.58s ease-in-out;
   z-index: 1;
+  overflow: hidden;
 
-  &::before {
-    content: "";
+  &>.header-banner {
     position: absolute;
     inset: 0;
-    pointer-events: none;
-    background: var(--vh-home-banner);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
     z-index: -1;
+    pointer-events: none;
   }
 
   &>.avatar {
