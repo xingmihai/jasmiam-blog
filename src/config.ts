@@ -90,7 +90,6 @@ export default {
   DNSOptimization: [
     'https://i0.wp.com',
     'https://cn.cravatar.com',
-    'https://analytics.jasmiam.top',
     'https://pagead2.googlesyndication.com'
   ],
   // 博客音乐组件解析接口
