@@ -35,7 +35,7 @@ export default {
     // 背景
     // https://pan.xmhai.cn/home-banner.webp
     // /assets/images/home-banner.webp
-    background: "url('https://img.xmhai.cn/v2/YEqszPR.jpeg') no-repeat center 60%/cover",
+    background: "url('https://store.xmhai.cn/1000107837.webp') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
